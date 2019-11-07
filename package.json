@@ -1,0 +1,25 @@
+{
+  "name": "testing-lighthouse",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prettify": "yarn prettier src/**/*.js --write",
+    "lint": "yarn eslint src"
+  },
+  "dependencies": {
+    "jsdom": "^15.2.1",
+    "node-fetch": "^2.6.0",
+    "pg": "^7.4.1",
+    "pg-format": "^1.0.4",
+    "puppeteer": "^1.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2"
+  }
+}

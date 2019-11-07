@@ -1,0 +1,11 @@
+[Unit]
+Description=updating the daily lighthouse stats
+After=network.target
+
+[Service]
+Environment=PGPASSWORD=pika25POS
+User=worker
+ExecStart=/home/worker/.nvm/versions/node/v13.1.0/bin/node /home/worker/git/lighthouse_rankings/src/fetcher.js
+
+[Install]
+WantedBy=multi-user.target
